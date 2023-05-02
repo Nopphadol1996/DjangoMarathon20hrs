@@ -1,0 +1,19 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %} ติดต่อร้านลุง {% endblock title %}
+
+{% block content %}
+
+<h1>ติดต่อลุง</h1>
+
+    {% for staff in namelist %}
+
+    <h3>{{staff.name}} <br> Tel {{staff.tel}} <br> Email {{staff.email }} <hr></h3>
+
+    {% endfor %}
+
+
+
+{% endblock content %}
+
+
